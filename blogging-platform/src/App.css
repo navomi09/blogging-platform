@@ -1,0 +1,104 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://img.freepik.com/free-vector/hand-drawn-abstract-doodle-background_23-2149319084.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: darkred;
+}
+
+button {
+  padding: 15px;
+  background-color: yellowgreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color:green;
+}
+
+#blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.blog-title {
+  font-size: 1.5em;
+  margin: 0;
+  color:rgb(0, 0, 7);
+}
+
+.blog-content {
+  font-size: 1em;
+  color: #555;
+  margin: 10px 0 0;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
