@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const blogForm = document.getElementById('blog-form');
     const blogsContainer = document.getElementById('blogs');
-
-    // Load blogs from localStorage
     loadBlogs();
 
     blogForm.addEventListener('submit', (e) => {
@@ -15,8 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const blog = { title, content, id: Date.now() };
             addBlogToDOM(blog);
             saveBlog(blog);
-            
-            // Clear form
             blogForm.reset();
         }
     });
